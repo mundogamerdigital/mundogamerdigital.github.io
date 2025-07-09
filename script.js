@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.whatsapp-btn').forEach(button => {
         button.addEventListener('click', function() {
             const productName = this.getAttribute('data-product');
-            const whatsappNumber = '51963037285'; // Your WhatsApp number
+            const whatsappNumber = '519630285'; // Your WhatsApp number
             const message = encodeURIComponent(`Hola, estoy interesado/a en el producto: *${productName}*. ¿Podrías darme más información?`);
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
             window.open(whatsappUrl, '_blank');
